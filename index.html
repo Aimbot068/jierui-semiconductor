@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Jierui Semiconductor | 深圳市杰锐半导体科技有限公司
+</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:
+"Arial",
+"Microsoft YaHei",
+sans-serif;
+}
+
+
+body{
+
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+/* Header */
+
+
+header{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+background:#061A33;
+
+z-index:999;
+
+}
+
+
+
+.nav{
+
+max-width:1200px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px;
+
+}
+
+
+
+.logo{
+
+color:white;
+
+font-size:25px;
+
+font-weight:bold;
+
+}
+
+
+
+.menu a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:25px;
+
+font-size:15px;
+
+}
+
+
+
+.lang button{
+
+border:none;
+
+background:white;
+
+color:#061A33;
+
+padding:6px 12px;
+
+margin-left:5px;
+
+cursor:pointer;
+
+border-radius:4px;
+
+}
+
+
+
+
+/* Hero */
+
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(
+rgba(6,26,51,.8),
+rgba(6,26,51,.8)
+);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+color:white;
+
+padding:20px;
+
+}
+
+
+
+.hero h1{
+
+font-size:50px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+font-size:22px;
+
+}
+
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:14px 40px;
+
+background:#0066ff;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:5px;
+
+}
+
+
+
+
+/* Section */
+
+
+section{
+
+padding:90px 10%;
+
+}
+
+
+
+.title{
+
+text-align:center;
+
+font-size:36px;
+
+color:#061A33;
+
+margin-bottom:45px;
+
+}
+
+
+
+
+
+/* About */
+
+
+.about{
+
+max-width:1000px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:18px;
+
+}
+
+
+
+
+
+/* Products */
+
+
+.products{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+
+
+.card{
+
+background:#f5f8fc;
+
+padding:35px;
+
+border-radius:12px;
+
+}
+
+
+
+.card h3{
+
+color:#0066ff;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/* Brand */
+
+
+.brand-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:50px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.brand{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:#061A33;
+
+}
+
+
+
+
+
+/* Dark Section */
+
+
+.dark{
+
+background:#061A33;
+
+color:white;
+
+}
+
+
+.dark .title{
+
+color:white;
+
+}
+
+
+
+
+
+/* Contact */
+
+
+.contact{
+
+text-align:center;
+
+font-size:18px;
+
+}
+
+
+
+
+
+footer{
+
+background:#000;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+
+
+
+.hidden{
+
+display:none;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+
+.menu{
+
+display:none;
+
+}
+
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="nav">
+
+
+<div class="logo">
+
+JIERUI SEMICONDUCTOR
+
+</div>
+
+
+
+<div class="menu">
+
+<a href="#about">
+
+About
+
+</a>
+
+
+<a href="#products">
+
+Products
+
+</a>
+
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+</div>
+
+
+
+<div class="lang">
+
+<button onclick="changeLang('en')">
+
+EN
+
+</button>
+
+
+<button onclick="changeLang('cn')">
+
+中文
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+
+<div id="hero-en">
+
+
+<h1>
+
+Your Trusted Partner for Semiconductor Memory Solutions
+
+</h1>
+
+
+<p>
+
+Providing reliable LPDDR and DDR memory supply solutions
+for global consumer electronics customers.
+
+</p>
+
+
+<a class="btn" href="#contact">
+
+Contact Us
+
+</a>
+
+
+</div>
+
+
+
+<div id="hero-cn" class="hidden">
+
+
+<h1>
+
+值得信赖的半导体存储解决方案供应商
+
+</h1>
+
+
+<p>
+
+专注 LPDDR 与 DDR 系列存储产品，
+为消费电子行业提供稳定可靠的供应链服务。
+
+</p>
+
+
+<a class="btn" href="#contact">
+
+联系我们
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="about">
+
+
+<h2 class="title">
+
+About Jierui Semiconductor
+
+</h2>
+
+
+<div id="about-en" class="about">
+
+
+<p>
+
+Shenzhen Jierui Semiconductor Co., Ltd.
+was established in 2025.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+We specialize in semiconductor memory products,
+including LPDDR4, LPDDR4X, LPDDR5,
+DDR3, DDR4 and DDR5 solutions.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+We provide reliable semiconductor supply chain
+solutions for consumer electronics customers worldwide.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div id="about-cn" class="about hidden">
+
+
+<p>
+
+深圳市杰锐半导体科技有限公司成立于2025年。
+
+</p>
+
+
+<br>
+
+
+<p>
+
+公司专注于半导体存储产品供应，
+主营 LPDDR4、LPDDR4X、LPDDR5、
+DDR3、DDR4以及DDR5系列产品。
+
+</p>
+
+
+<br>
+
+
+<p>
+
+致力于为消费电子客户提供稳定、
+可靠、高效的存储芯片供应链服务。
+
+</p>
+
+
+</div>
+
+
+</section>
+<!-- Products -->
+
+<section id="products">
+
+
+<h2 class="title">
+
+Memory Products
+
+</h2>
+
+
+
+<div class="products">
+
+
+<div class="card">
+
+
+<h3>
+
+LPDDR Memory Solutions
+
+</h3>
+
+
+<p id="lpddr-en">
+
+
+LPDDR4<br>
+LPDDR4X<br>
+LPDDR5
+
+<br><br>
+
+Designed for smartphones,
+tablets, smart devices and
+consumer electronics applications.
+
+
+</p>
+
+
+<p id="lpddr-cn" class="hidden">
+
+
+LPDDR系列存储解决方案
+
+<br><br>
+
+LPDDR4<br>
+LPDDR4X<br>
+LPDDR5
+
+<br><br>
+
+主要应用于：
+
+移动设备<br>
+智能终端<br>
+消费电子产品
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+DDR Memory Solutions
+
+</h3>
+
+
+
+<p id="ddr-en">
+
+
+DDR3<br>
+DDR4<br>
+DDR5
+
+
+<br><br>
+
+
+Supporting computing systems,
+consumer electronics and
+embedded applications.
+
+
+</p>
+
+
+
+<p id="ddr-cn" class="hidden">
+
+
+DDR系列存储解决方案
+
+<br><br>
+
+DDR3<br>
+DDR4<br>
+DDR5
+
+
+<br><br>
+
+
+应用于：
+
+计算设备<br>
+消费电子<br>
+嵌入式系统
+
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Supply Capability -->
+
+
+<section class="dark">
+
+
+<h2 class="title">
+
+Supply Capability
+
+</h2>
+
+
+
+<div class="products">
+
+
+<div class="card">
+
+
+<h3>
+
+Reliable Supply Chain
+
+</h3>
+
+
+<p id="supply-en">
+
+
+Flexible sourcing capability,
+stable product availability
+and professional order management.
+
+
+</p>
+
+
+<p id="supply-cn" class="hidden">
+
+
+灵活采购能力、
+稳定供应能力以及专业订单管理。
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Global Service
+
+</h3>
+
+
+<p id="global-en">
+
+
+Supporting domestic and
+international customers with
+efficient semiconductor solutions.
+
+
+</p>
+
+
+<p id="global-cn" class="hidden">
+
+
+支持国内及海外客户合作，
+提供高效的半导体供应解决方案。
+
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Quality Focus
+
+</h3>
+
+
+<p id="quality-en">
+
+
+Committed to reliable products
+and professional supply chain services.
+
+
+</p>
+
+
+<p id="quality-cn" class="hidden">
+
+
+专注可靠产品供应，
+提供专业供应链服务。
+
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Brands -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Supported Brands
+
+</h2>
+
+
+
+<div class="brand-box">
+
+
+<div class="brand">
+
+Samsung
+
+</div>
+
+
+<div class="brand">
+
+SK hynix
+
+</div>
+
+
+
+</div>
+
+
+<br>
+
+
+<p style="text-align:center"
+id="brand-en">
+
+
+We cooperate with reliable semiconductor
+supply channels to provide stable memory solutions.
+
+
+</p>
+
+
+
+<p style="text-align:center"
+id="brand-cn"
+class="hidden">
+
+
+我们通过可靠的半导体供应渠道，
+为客户提供稳定的存储产品解决方案。
+
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Applications -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Applications
+
+</h2>
+
+
+
+<div class="products">
+
+
+<div class="card">
+
+
+<h3>
+
+Consumer Electronics
+
+</h3>
+
+
+<p id="app1-en">
+
+
+Smartphones<br>
+Tablets<br>
+Smart Devices
+
+
+</p>
+
+
+<p id="app1-cn" class="hidden">
+
+
+智能手机<br>
+平板设备<br>
+智能终端
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Embedded Systems
+
+</h3>
+
+
+<p id="app2-en">
+
+
+Embedded devices<br>
+Electronic equipment
+
+
+</p>
+
+
+<p id="app2-cn" class="hidden">
+
+
+嵌入式设备<br>
+电子产品设备
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Technology Products
+
+</h3>
+
+
+<p id="app3-en">
+
+
+Consumer technology
+solutions
+
+
+</p>
+
+
+<p id="app3-cn" class="hidden">
+
+
+消费电子技术产品解决方案
+
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Contact -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+
+Contact Us
+
+</h2>
+
+
+
+<div class="contact">
+
+
+<p>
+
+Shenzhen Jierui Semiconductor Co., Ltd.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Email:
+
+<br>
+
+Aimbot068@163.com
+
+</p>
+
+
+<br>
+
+
+<p id="contact-en">
+
+
+Location:
+
+<br>
+
+Shenzhen, China
+
+
+</p>
+
+
+<p id="contact-cn"
+class="hidden">
+
+
+地址：
+
+<br>
+
+中国深圳
+
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+© 2026 Shenzhen Jierui Semiconductor Co., Ltd.
+
+</p>
+
+
+<p>
+
+All Rights Reserved.
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<script>
+
+
+function changeLang(lang){
+
+
+
+let en=document.querySelectorAll('[id$="-en"]');
+
+let cn=document.querySelectorAll('[id$="-cn"]');
+
+
+
+if(lang==="en"){
+
+
+en.forEach(function(item){
+
+item.classList.remove("hidden");
+
+});
+
+
+cn.forEach(function(item){
+
+item.classList.add("hidden");
+
+});
+
+
+}
+
+
+else{
+
+
+cn.forEach(function(item){
+
+item.classList.remove("hidden");
+
+});
+
+
+en.forEach(function(item){
+
+item.classList.add("hidden");
+
+});
+
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
+<!-- ===== About Us ===== -->
+
+
+<section id="about">
+
+
+<h2 class="title">
+
+About Jierui Semiconductor
+
+</h2>
+
+
+
+<div id="about-en">
+
+
+<p style="text-align:center;font-size:18px;">
+
+
+Shenzhen Jierui Semiconductor Co., Ltd.
+was established in 2025.
+
+
+</p>
+
+
+
+<br>
+
+
+
+<p style="text-align:center;font-size:18px;">
+
+
+We specialize in semiconductor memory products,
+including LPDDR4, LPDDR4X, LPDDR5,
+DDR3, DDR4 and DDR5 solutions.
+
+
+</p>
+
+
+
+<br>
+
+
+
+<p style="text-align:center;font-size:18px;">
+
+
+Through reliable supply chain resources,
+we provide professional memory solutions
+for global consumer electronics customers.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div id="about-zh" class="hidden">
+
+
+<p style="text-align:center;font-size:18px;">
+
+
+深圳市杰銳半導體科技有限公司成立於2025年。
+
+
+</p>
+
+
+
+<br>
+
+
+
+<p style="text-align:center;font-size:18px;">
+
+
+公司專注於半導體存儲產品供應，
+主營 LPDDR4、LPDDR4X、LPDDR5、
+DDR3、DDR4 以及 DDR5 系列產品。
+
+
+</p>
+
+
+
+<br>
+
+
+
+<p style="text-align:center;font-size:18px;">
+
+
+依託穩定的供應鏈資源，
+為全球消費電子客戶提供專業的存儲晶片解決方案。
+
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ===== Products ===== -->
+
+
+<section id="products">
+
+
+<h2 class="title">
+
+Memory Products
+
+</h2>
+
+
+
+<div class="products">
+
+
+
+<div class="card">
+
+
+<h3>
+
+LPDDR Memory Solutions
+
+</h3>
+
+
+
+<p id="lpddr-en">
+
+
+LPDDR4<br>
+
+LPDDR4X<br>
+
+LPDDR5
+
+
+<br><br>
+
+
+Designed for smartphones,
+tablets, smart devices and
+consumer electronics applications.
+
+
+</p>
+
+
+
+
+<p id="lpddr-zh" class="hidden">
+
+
+LPDDR 系列存儲解決方案
+
+
+<br><br>
+
+
+LPDDR4<br>
+
+LPDDR4X<br>
+
+LPDDR5
+
+
+<br><br>
+
+
+主要應用於：
+
+<br>
+
+智能手機
+
+<br>
+
+平板設備
+
+<br>
+
+智能終端
+
+<br>
+
+消費電子產品
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+DDR Memory Solutions
+
+</h3>
+
+
+
+<p id="ddr-en">
+
+
+DDR3<br>
+
+DDR4<br>
+
+DDR5
+
+
+<br><br>
+
+
+Supporting computing systems,
+consumer electronics and
+embedded applications.
+
+
+</p>
+
+
+
+
+
+<p id="ddr-zh" class="hidden">
+
+
+DDR 系列存儲解決方案
+
+
+<br><br>
+
+
+DDR3<br>
+
+DDR4<br>
+
+DDR5
+
+
+<br><br>
+
+
+主要應用於：
+
+<br>
+
+計算設備
+
+<br>
+
+消費電子
+
+<br>
+
+嵌入式系統
+
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===== Supply Capability ===== -->
+
+
+<section style="background:#061A33;">
+
+
+
+<h2 class="title" style="color:white;">
+
+Supply Capability
+
+</h2>
+
+
+
+<div class="products">
+
+
+
+<div class="card">
+
+
+<h3>
+
+Reliable Supply Chain
+
+</h3>
+
+
+
+<p id="supply-en">
+
+Flexible sourcing capability,
+stable product availability
+and professional order management.
+
+</p>
+
+
+
+<p id="supply-zh" class="hidden">
+
+靈活採購能力、
+穩定供應能力以及專業訂單管理。
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Global Service
+
+</h3>
+
+
+
+<p id="global-en">
+
+Supporting domestic and international customers
+with efficient semiconductor solutions.
+
+</p>
+
+
+
+<p id="global-zh" class="hidden">
+
+支持國內及海外客戶合作，
+提供高效的半導體供應解決方案。
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Quality Focus
+
+</h3>
+
+
+
+<p id="quality-en">
+
+Committed to reliable products
+and professional supply chain services.
+
+</p>
+
+
+
+<p id="quality-zh" class="hidden">
+
+專注可靠產品供應，
+提供專業供應鏈服務。
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===== Supported Brands ===== -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Supported Brands
+
+</h2>
+
+
+
+
+<div style="
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+font-size:32px;
+font-weight:bold;
+color:#061A33;
+">
+
+
+<div>
+
+Samsung
+
+</div>
+
+
+
+<div>
+
+SK hynix
+
+</div>
+
+
+
+</div>
+
+
+
+
+<br>
+
+
+
+<p id="brand-en"
+style="text-align:center;">
+
+
+We cooperate with reliable semiconductor
+supply channels to provide stable memory solutions.
+
+</p>
+
+
+
+
+
+<p id="brand-zh"
+class="hidden"
+style="text-align:center;">
+
+
+我們通過可靠的半導體供應渠道，
+為客戶提供穩定的存儲產品解決方案。
+
+
+</p>
+
+
+
+
+</section>
+<!-- ===== Applications ===== -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Applications
+
+</h2>
+
+
+
+<div class="products">
+
+
+
+<div class="card">
+
+
+<h3>
+
+Consumer Electronics
+
+</h3>
+
+
+
+<p id="app1-en">
+
+Smartphones<br>
+
+Tablets<br>
+
+Smart Devices
+
+
+</p>
+
+
+
+
+<p id="app1-zh" class="hidden">
+
+智能手機<br>
+
+平板設備<br>
+
+智能終端
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Embedded Systems
+
+</h3>
+
+
+
+<p id="app2-en">
+
+Embedded devices<br>
+
+Electronic equipment
+
+
+</p>
+
+
+
+
+<p id="app2-zh" class="hidden">
+
+嵌入式設備<br>
+
+電子產品設備
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Consumer Technology
+
+</h3>
+
+
+
+<p id="app3-en">
+
+Consumer electronics
+solutions
+
+
+</p>
+
+
+
+<p id="app3-zh" class="hidden">
+
+消費電子產品解決方案
+
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ===== Contact ===== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+
+Contact Us
+
+</h2>
+
+
+
+<div style="
+text-align:center;
+font-size:18px;
+">
+
+
+
+<p>
+
+Shenzhen Jierui Semiconductor Co., Ltd.
+
+</p>
+
+
+
+<br>
+
+
+
+<p>
+
+Email:
+
+<br>
+
+Aimbot068@163.com
+
+</p>
+
+
+
+<br>
+
+
+
+<p id="contact-en">
+
+
+Location:
+
+<br>
+
+Shenzhen, China
+
+
+</p>
+
+
+
+<p id="contact-zh" class="hidden">
+
+
+地址：
+
+<br>
+
+中國深圳
+
+
+</p>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+© 2026 Shenzhen Jierui Semiconductor Co., Ltd.
+
+</p>
+
+
+<p>
+
+All Rights Reserved.
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<style>
+
+
+/* Fix card text color */
+
+
+.card{
+
+color:#111;
+
+}
+
+
+
+.card p{
+
+color:#111;
+
+line-height:1.8;
+
+}
+
+
+
+.card h3{
+
+color:#0066ff;
+
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+<script>
+
+
+function changeLang(lang){
+
+
+
+let enElements =
+document.querySelectorAll('[id$="-en"]');
+
+
+let zhElements =
+document.querySelectorAll('[id$="-zh"]');
+
+
+
+
+
+if(lang==="en"){
+
+
+
+enElements.forEach(function(item){
+
+
+item.classList.remove("hidden");
+
+
+});
+
+
+
+zhElements.forEach(function(item){
+
+
+item.classList.add("hidden");
+
+
+});
+
+
+
+}
+
+else{
+
+
+
+zhElements.forEach(function(item){
+
+
+item.classList.remove("hidden");
+
+
+});
+
+
+
+enElements.forEach(function(item){
+
+
+item.classList.add("hidden");
+
+
+});
+
+
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
